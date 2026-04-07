@@ -31,7 +31,7 @@ def get_bot_response(user_input):
         return "I'm not sure I understand. Try asking about courses or the portal!"
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return "FUTO Bot Backend is Active!"
 
 @app.route("/get", methods=["POST"])
 def chatbot_response():
