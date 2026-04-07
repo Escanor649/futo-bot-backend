@@ -568,4 +568,55 @@
    "context": ""
   }
  ]
-}
+},
+{
+      "tag": "futo_location",
+      "patterns": ["Where is FUTO?", "Location of FUTO", "Where is the school located?", "Ihiagwa"],
+      "responses": ["FUTO is located in Ihiagwa, Owerri West Local Government Area of Imo State, Nigeria. It's surrounded by the Otamiri River!"]
+    },
+    {
+      "tag": "futo_anthem",
+      "patterns": ["Sing FUTO anthem", "What is the school anthem?", "FUTO song"],
+      "responses": ["'FUTO! FUTO!! Our Great Citadel of Excellence...' It's a song of pride for every student. You should learn it for convocation!"]
+    },
+    {
+      "tag": "transportation",
+      "patterns": ["How to get to school?", "Bus to FUTO", "Green bus", "School shuttle"],
+      "responses": ["You can take the popular 'Green Bus' from Control or Relief market. Inside campus, we have the school shuttles that move between the various hostels and lecture halls."]
+    },
+    {
+      "tag": "hostels",
+      "patterns": ["Tell me about hostels", "Where can I stay?", "School hostels", "Aladinma", "Ihiagwa off-campus"],
+      "responses": ["FUTO has several hostels like Hostels A, B, C, D, and E on campus. Many students also stay off-campus in Ihiagwa, Eziobodo, or Umuchima."]
+    },
+    {
+      "tag": "food_spots",
+      "patterns": ["Where can I eat?", "Best food in FUTO", "Mama G", "Fast food campus", "Eating spots"],
+      "responses": ["You can find great food at the SEET Head, the SUB (Student Union Building), or various 'Mamas' scattered around the faculty buildings. Don't forget the popular spots in Eziobodo for evening 'suya' and 'point and kill'!"]
+    },
+    {
+      "tag": "study_places",
+      "patterns": ["Where can I study?", "Quiet places to read", "Library location", "Night class"],
+      "responses": ["The University Library is the best spot for quiet study. For night classes, many students use the SEET or SAAT lecture halls, but make sure you go with a group for safety!"]
+    },
+    {
+      "tag": "futo_motto",
+      "patterns": ["What is FUTO motto?", "School motto", "Technology is the key"],
+      "responses": ["The motto of FUTO is 'Technology for Service'. It reflects our goal to use technical knowledge to better society."]
+    },
+    {
+      "tag": "exam_prep",
+      "patterns": ["How to pass exams?", "Study tips for FUTO", "CBT exams"],
+      "responses": ["Start reading early! FUTO exams can be tough. Use past questions, attend tutorials, and make sure you understand the CBT (Computer Based Test) format used for GS courses."]
+    },
+    {
+      "tag": "health_center",
+      "patterns": ["Where is the medical center?", "I am sick", "FUTO clinic", "Hospital on campus"],
+      "responses": ["The Medical Center is located near the School's main gate area. If you feel unwell, take your school ID card there for treatment."]
+    },
+    {
+      "tag": "sports",
+      "patterns": ["Where is the stadium?", "Football in FUTO", "Sports center", "Gym campus"],
+      "responses": ["The Sports Center is near the hostels. We have football pitches, basketball courts, and track facilities for all students to use!"]
+    },
+
