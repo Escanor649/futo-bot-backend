@@ -1,558 +1,233 @@
-{"intents": [
+{
+  "intents": [
     {
       "tag": "greeting",
       "patterns": ["Hi", "Hello", "Good morning", "Hey there"],
       "responses": ["Hello! How can I help you today?", "Hi there! What do you need help with?"]
     },
-{
- "intents": [
-  {
-   "tag": "greeting",
-   "patterns": [
-    "Hi",
-    "Hi there",
-    "How are you",
-    "Is anyone there?",
-    "Hey",
-    "Hello",
-    "Good day"
-   ],
-   "responses": [
-    "Hi, how can I assist?",
-    "Hello, how can I help you today?",
-    "Hi, I am great, how can I help today?",
-    "Good to see you again!",
-    "Hi there, how can I help?"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "goodbye",
-   "patterns": [
-    "Bye",
-    "See you later",
-    "Goodbye",
-    "Nice chatting with you, bye",
-    "Till next time"
-   ],
-   "responses": [
-    "See you!",
-    "Have a nice day!",
-    "Thank you, see you again soon!",
-    "Bye! Come back again soon.",
-    "Goodbye"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "thanks",
-   "patterns": [
-    "Thanks",
-    "Thank you",
-    "That's helpful",
-    "Awesome, thanks",
-    "Thanks for helping me"
-   ],
-   "responses": [
-    "Happy to help!",
-    "Any time!",
-    "Glad I was able to help!",
-    "You are welcome!",
-    "My pleasure"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "noanswer",
-   "patterns": [],
-   "responses": [
-    "Sorry, can't understand you",
-    "Please provide more information",
-    "Not sure I understand"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "options",
-   "patterns": [
-    "How can you help me?",
-    "What type of help do you provide?",
-    "How can you be helpful?",
-    "What do you do?"
-   ],
-   "responses": [
-    "I can guide you through: \n-adverse management problems, \n-order tracking, \n-person to be contacted, \n-department related queries, \n-or even weather forecasts for countries in the main language for that country"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "order_tracking",
-   "patterns": [
-    "What is happening with order 55555?",
-    "What is the status for order 55555?",
-    "Track order 55555",
-    "Where is my order 55555?"
-   ],
-   "responses": [
-    "Delayed",
-    "Dispatched",
-    "Cancelled",
-    "On the Way!"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "order_components",
-   "patterns": [
-    "order 55555 comprises of?",
-    "What is in order 55555?",
-    "List of components"
-   ],
-   "responses": [
-    "The order comprises of a computer and a television",
-    "The order includes dog treats and a dog bed"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "missing_id",
-   "patterns": [
-    "Where is the order?",
-    "Where is my order?",
-    "Locate the order",
-    "Delivery date of order"
-   ],
-   "responses": [
-    "Please enter with order's ID",
-    "Which order are you referring to?"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "Location",
-   "patterns": [
-    "Please find the location for order 55555",
-    "What is the location for order 55555?"
-   ],
-   "responses": [
-    "It is in Germany",
-    "It is in France",
-    "It is in the United States",
-    "It has reached China"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "search_person_by_id",
-   "patterns": [
-    "I want an appoitment with Dr. Jane Doe",
-    "Please set an appointment with Dr. James Jones"
-   ],
-   "responses": [
-    "Fixing an appointment.",
-    "Setting up an appointment now."
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "appointment_status",
-   "patterns": [
-    "Is my appointment fixed?",
-    "Do I have an appointment today?"
-   ],
-   "responses": [
-    "Yes",
-    "All set!",
-    "No! Not Yet"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "check_leave",
-   "patterns": [
-    "Is Dr. Jane Doe on leave?",
-    "Is Dr. James Jones on leave?"
-   ],
-   "responses": [
-    "Not On Leave",
-    "Yes On Leave"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "forgot_password",
-   "patterns": [
-    "I forgot my login password",
-    "what to do when someone forgets their password?",
-    "I forgot my work password",
-    "Forgot the virtual machine password"
-   ],
-   "responses": [
-    "Please enter your email id and we will send a link to your email shortly"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "email_id",
-   "patterns": [
-    "abc@gmail.com",
-    "abc@yahoo.com"
-   ],
-   "responses": [
-    "The link has been sent. Please change your password!"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "manufacturing_problems",
-   "patterns": [
-    "Please find me a manufacturer nearby"
-   ],
-   "responses": [
-    "The nearest manufacturer is 20 miles away",
-    "The nearest manufacturer is 50 miles away"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "search_department",
-   "patterns": [
-    "Please list the departments"
-   ],
-   "responses": [
-    "The departments are: \n-Engineering Research and Development, \n-Manufacturing Systems Engineering, \n-New Products Development, \n-Manufacturing Department, \n-Quality Department, \n-Maintenance Department, \n-Marketing Department, \n-Human Resources Development, \n-Personnel Department, \n-Finance Department"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "key_customers",
-   "patterns": [
-    "Our Target customers",
-    "Who are your target customers?"
-   ],
-   "responses": [
-    "Our target customers are in the age range of 20-40"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "supplier_info",
-   "patterns": [
-    "What information is shared with supplier?"
-   ],
-   "responses": [
-    "Production Schedule, Delivery Schedule"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "highest_grossing",
-   "patterns": [
-    "What is the highest grossing product?"
-   ],
-   "responses": [
-    "iPhone X",
-    "Platform boots"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "connect_people",
-   "patterns": [
-    "I want to meet the head of the HR/IT/Projects departments",
-    "I want to meet the head of HR."
-   ],
-   "responses": [
-    "I will just check if he or she is available."
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "solve_problems",
-   "patterns": [
-    "Lack of product clarity",
-    "the specifications for the product are not clear to the customer. What can be done?"
-   ],
-   "responses": [
-    "Please enter an order. Specifications will be sent to user!"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "predict_performance",
-   "patterns": [
-    "how have we improved sales from last year?",
-    "what is the profit margin this year?"
-   ],
-   "responses": [
-    "we have improved sales by increasing the customer base",
-    "profit earnings are at 15%"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "customer_satisfaction",
-   "patterns": [
-    "how was the customer response",
-    "Is the customer happy?",
-    "what was the customer feedback?"
-   ],
-   "responses": [
-    "Customer was happy and has given good rating"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "gadgets",
-   "patterns": [
-    "What are the gadgets in stock?",
-    "which products are available?"
-   ],
-   "responses": [
-    "hardisk, wireless bluetooth, laptop, gaming console"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "invalid",
-   "patterns": [
-    "chat with me",
-    "I am confused",
-    "I don't know what to work on"
-   ],
-   "responses": [
-    "Please ask a more specific question."
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "noans",
-   "patterns": [
-    "why",
-    "how",
-    "when",
-    "I",
-    "you"
-   ],
-   "responses": [
-    "Can't understand your question",
-    "Please elaborate!"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "turnover",
-   "patterns": [
-    "what is the turnover at this company at present?"
-   ],
-   "responses": [
-    "I do not have an answer to your question."
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "predict_delay",
-   "patterns": [
-    "why is order 55555 delayed?"
-   ],
-   "responses": [
-    "delay is due to manufacuring",
-    "Delay is due to unavailable components"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "name",
-   "patterns": [
-    "what is your name?",
-    "what should I call you?"
-   ],
-   "responses": [
-    "You can call me CSUBot",
-    "Hey! I'm CSUBot"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "about",
-   "patterns": [
-    "how you doing?",
-    "how are you?"
-   ],
-   "responses": [
-    "Thanks For asking! I am good. How can I help you?"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "configuration",
-   "patterns": [
-    "How to configure my laptop?",
-    "software configuration of a laptop",
-    "steps to configure a laptop",
-    "How to configure my computer?",
-    "software configuration for a computer",
-    "steps to configure my computer",
-    "How to configure my desktop?",
-    "software configuration for a desktop",
-    "steps to configure a desktop"
-   ],
-   "responses": [
-    "search tab->control panel->select specific application->download update->give permission"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "Weather",
-   "patterns": [
-    "what is the weather today?",
-    "weather",
-    "Weather",
-    "What is the weather forecast in ",
-    "What is the weather forecast in France?",
-    "What is the weather forecast in Germany?",
-    "What is the weather forecast in England?",
-    "What is the weather forecast in the United States?"
-   ],
-   "responses": [
-    "The weather displays below using the country's language."
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "leave",
-   "patterns": [
-    "Is Jane Doe on leave?",
-    "Is James Jones present today?",
-    "Is Jane Doe in the office?"
-   ],
-   "responses": [
-    "Give me a moment! I will check",
-    "yes",
-    "no"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "hours",
-   "patterns": [
-    "Opening hours for the cafeteria?",
-    "when does the cafeteria open",
-    "office restaurant opening time"
-   ],
-   "responses": [
-    "It is open from Monday-Saturday from 9:00am to 5:00pm"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "domain",
-   "patterns": [
-    "How to improve team members domain knowledge",
-    "improving domain knowledge for team members"
-   ],
-   "responses": [
-    "set up meetings and workshop, \ncreate a shared drive for holding information, \nHold information sharing session"
-   ],
-   "context": [
-    ""
-   ]
-  },
-  {
-   "tag": "Cars",
-   "patterns": [
-    "How much is a 2022 honda odyssey?",
-    "How much is a 2022 mini convertible?"
-   ],
-   "responses": [
-    "A 2022 honda odyssey costs between 32k and 49k",
-    "A 2022 mini convertible costs between 28k and 39k"
-   ],
-   "context": ""
-  },
-  {
-   "tag": "dogs",
-   "patterns": [
-    "Chihuahua",
-    "Italian Greyhound"
-   ],
-   "responses": [
-    "They can live 10 to 15 years",
-    "They enjoy treats and walks in nature"
-   ],
-   "context": ""
-  }
- ]
-},
-{
+    {
+      "tag": "greeting_expanded",
+      "patterns": ["Hi", "Hi there", "How are you", "Is anyone there?", "Hey", "Hello", "Good day"],
+      "responses": ["Hi, how can I assist?", "Hello, how can I help you today?", "Hi, I am great, how can I help today?", "Good to see you again!", "Hi there, how can I help?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting with you, bye", "Till next time"],
+      "responses": ["See you!", "Have a nice day!", "Thank you, see you again soon!", "Bye! Come back again soon.", "Goodbye"],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "Glad I was able to help!", "You are welcome!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["Sorry, can't understand you", "Please provide more information", "Not sure I understand"],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": ["How can you help me?", "What type of help do you provide?", "How can you be helpful?", "What do you do?"],
+      "responses": ["I can guide you through: \n-adverse management problems, \n-order tracking, \n-person to be contacted, \n-department related queries, \n-or even weather forecasts for countries in the main language for that country"],
+      "context": [""]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": ["What is happening with order 55555?", "What is the status for order 55555?", "Track order 55555", "Where is my order 55555?"],
+      "responses": ["Delayed", "Dispatched", "Cancelled", "On the Way!"],
+      "context": [""]
+    },
+    {
+      "tag": "order_components",
+      "patterns": ["order 55555 comprises of?", "What is in order 55555?", "List of components"],
+      "responses": ["The order comprises of a computer and a television", "The order includes dog treats and a dog bed"],
+      "context": [""]
+    },
+    {
+      "tag": "missing_id",
+      "patterns": ["Where is the order?", "Where is my order?", "Locate the order", "Delivery date of order"],
+      "responses": ["Please enter with order's ID", "Which order are you referring to?"],
+      "context": [""]
+    },
+    {
+      "tag": "Location",
+      "patterns": ["Please find the location for order 55555", "What is the location for order 55555?"],
+      "responses": ["It is in Germany", "It is in France", "It is in the United States", "It has reached China"],
+      "context": [""]
+    },
+    {
+      "tag": "search_person_by_id",
+      "patterns": ["I want an appoitment with Dr. Jane Doe", "Please set an appointment with Dr. James Jones"],
+      "responses": ["Fixing an appointment.", "Setting up an appointment now."],
+      "context": [""]
+    },
+    {
+      "tag": "appointment_status",
+      "patterns": ["Is my appointment fixed?", "Do I have an appointment today?"],
+      "responses": ["Yes", "All set!", "No! Not Yet"],
+      "context": [""]
+    },
+    {
+      "tag": "check_leave",
+      "patterns": ["Is Dr. Jane Doe on leave?", "Is Dr. James Jones on leave?"],
+      "responses": ["Not On Leave", "Yes On Leave"],
+      "context": [""]
+    },
+    {
+      "tag": "forgot_password",
+      "patterns": ["I forgot my login password", "what to do when someone forgets their password?", "I forgot my work password", "Forgot the virtual machine password"],
+      "responses": ["Please enter your email id and we will send a link to your email shortly"],
+      "context": [""]
+    },
+    {
+      "tag": "email_id",
+      "patterns": ["abc@gmail.com", "abc@yahoo.com"],
+      "responses": ["The link has been sent. Please change your password!"],
+      "context": [""]
+    },
+    {
+      "tag": "manufacturing_problems",
+      "patterns": ["Please find me a manufacturer nearby"],
+      "responses": ["The nearest manufacturer is 20 miles away", "The nearest manufacturer is 50 miles away"],
+      "context": [""]
+    },
+    {
+      "tag": "search_department",
+      "patterns": ["Please list the departments"],
+      "responses": ["The departments are: \n-Engineering Research and Development, \n-Manufacturing Systems Engineering, \n-New Products Development, \n-Manufacturing Department, \n-Quality Department, \n-Maintenance Department, \n-Marketing Department, \n-Human Resources Development, \n-Personnel Department, \n-Finance Department"],
+      "context": [""]
+    },
+    {
+      "tag": "key_customers",
+      "patterns": ["Our Target customers", "Who are your target customers?"],
+      "responses": ["Our target customers are in the age range of 20-40"],
+      "context": [""]
+    },
+    {
+      "tag": "supplier_info",
+      "patterns": ["What information is shared with supplier?"],
+      "responses": ["Production Schedule, Delivery Schedule"],
+      "context": [""]
+    },
+    {
+      "tag": "highest_grossing",
+      "patterns": ["What is the highest grossing product?"],
+      "responses": ["iPhone X", "Platform boots"],
+      "context": [""]
+    },
+    {
+      "tag": "connect_people",
+      "patterns": ["I want to meet the head of the HR/IT/Projects departments", "I want to meet the head of HR."],
+      "responses": ["I will just check if he or she is available."],
+      "context": [""]
+    },
+    {
+      "tag": "solve_problems",
+      "patterns": ["Lack of product clarity", "the specifications for the product are not clear to the customer. What can be done?"],
+      "responses": ["Please enter an order. Specifications will be sent to user!"],
+      "context": [""]
+    },
+    {
+      "tag": "predict_performance",
+      "patterns": ["how have we improved sales from last year?", "what is the profit margin this year?"],
+      "responses": ["we have improved sales by increasing the customer base", "profit earnings are at 15%"],
+      "context": [""]
+    },
+    {
+      "tag": "customer_satisfaction",
+      "patterns": ["how was the customer response", "Is the customer happy?", "what was the customer feedback?"],
+      "responses": ["Customer was happy and has given good rating"],
+      "context": [""]
+    },
+    {
+      "tag": "gadgets",
+      "patterns": ["What are the gadgets in stock?", "which products are available?"],
+      "responses": ["hardisk, wireless bluetooth, laptop, gaming console"],
+      "context": [""]
+    },
+    {
+      "tag": "invalid",
+      "patterns": ["chat with me", "I am confused", "I don't know what to work on"],
+      "responses": ["Please ask a more specific question."],
+      "context": [""]
+    },
+    {
+      "tag": "noans",
+      "patterns": ["why", "how", "when", "I", "you"],
+      "responses": ["Can't understand your question", "Please elaborate!"],
+      "context": [""]
+    },
+    {
+      "tag": "turnover",
+      "patterns": ["what is the turnover at this company at present?"],
+      "responses": ["I do not have an answer to your question."],
+      "context": [""]
+    },
+    {
+      "tag": "predict_delay",
+      "patterns": ["why is order 55555 delayed?"],
+      "responses": ["delay is due to manufacuring", "Delay is due to unavailable components"],
+      "context": [""]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name?", "what should I call you?"],
+      "responses": ["You can call me CSUBot", "Hey! I'm CSUBot"],
+      "context": [""]
+    },
+    {
+      "tag": "about",
+      "patterns": ["how you doing?", "how are you?"],
+      "responses": ["Thanks For asking! I am good. How can I help you?"],
+      "context": [""]
+    },
+    {
+      "tag": "configuration",
+      "patterns": ["How to configure my laptop?", "software configuration of a laptop", "steps to configure a laptop", "How to configure my computer?", "software configuration for a computer", "steps to configure my computer", "How to configure my desktop?", "software configuration for a desktop", "steps to configure a desktop"],
+      "responses": ["search tab->control panel->select specific application->download update->give permission"],
+      "context": [""]
+    },
+    {
+      "tag": "Weather",
+      "patterns": ["what is the weather today?", "weather", "Weather", "What is the weather forecast in ", "What is the weather forecast in France?", "What is the weather forecast in Germany?", "What is the weather forecast in England?", "What is the weather forecast in the United States?"],
+      "responses": ["The weather displays below using the country's language."],
+      "context": [""]
+    },
+    {
+      "tag": "leave_check",
+      "patterns": ["Is Jane Doe on leave?", "Is James Jones present today?", "Is Jane Doe in the office?"],
+      "responses": ["Give me a moment! I will check", "yes", "no"],
+      "context": [""]
+    },
+    {
+      "tag": "hours",
+      "patterns": ["Opening hours for the cafeteria?", "when does the cafeteria open", "office restaurant opening time"],
+      "responses": ["It is open from Monday-Saturday from 9:00am to 5:00pm"],
+      "context": [""]
+    },
+    {
+      "tag": "domain",
+      "patterns": ["How to improve team members domain knowledge", "improving domain knowledge for team members"],
+      "responses": ["set up meetings and workshop, \ncreate a shared drive for holding information, \nHold information sharing session"],
+      "context": [""]
+    },
+    {
+      "tag": "Cars",
+      "patterns": ["How much is a 2022 honda odyssey?", "How much is a 2022 mini convertible?"],
+      "responses": ["A 2022 honda odyssey costs between 32k and 49k", "A 2022 mini convertible costs between 28k and 39k"],
+      "context": [""]
+    },
+    {
+      "tag": "dogs",
+      "patterns": ["Chihuahua", "Italian Greyhound"],
+      "responses": ["They can live 10 to 15 years", "They enjoy treats and walks in nature"],
+      "context": [""]
+    },
+    {
       "tag": "futo_location",
       "patterns": ["Where is FUTO?", "Location of FUTO", "Where is the school located?", "Ihiagwa"],
       "responses": ["FUTO is located in Ihiagwa, Owerri West Local Government Area of Imo State, Nigeria. It's surrounded by the Otamiri River!"]
@@ -597,7 +272,7 @@
       "patterns": ["Where is the stadium?", "Football in FUTO", "Sports center", "Gym campus"],
       "responses": ["The Sports Center is near the hostels. We have football pitches, basketball courts, and track facilities for all students to use!"]
     },
-{
+    {
       "tag": "cyb_311",
       "patterns": ["What is CYB 311?", "Tell me about CYB 311", "Cybersecurity practicals", "Python in CYB"],
       "responses": ["CYB 311 is focused on Cybersecurity Programming. You'll be using Python to build security tools and automate tasks!"]
@@ -647,7 +322,7 @@
       "patterns": ["What are cyber ethics?", "Legal hacking", "Cybercrime laws Nigeria"],
       "responses": ["Cyber ethics involve using your skills for good. Always stay within the law and never access systems without explicit permission!"]
     },
-{
+    {
       "tag": "version_control",
       "patterns": ["What is Git?", "How to use GitHub", "Why use version control?", "Commit and Push", "Repository basics"],
       "responses": ["Git is a version control system that tracks changes in your code, while GitHub is a cloud-based platform that hosts those Git repositories. As a Cybersecurity student, using Git is non-negotiable! It allows you to collaborate with others, revert to previous working versions if you break your code, and maintain a professional portfolio. You should master commands like 'git add', 'git commit', and 'git push' to manage your projects effectively."]
@@ -697,7 +372,7 @@
       "patterns": ["Coding is hard", "I feel stuck", "Developer burnout", "Motivation for students"],
       "responses": ["Coding is a marathon, not a sprint. It is completely normal to feel frustrated when your code doesn't work or when you see an 'Internal Server Error' for the tenth time! When you get stuck, take a break, go for a walk around Ihiagwa, or play a game of Mobile Legends to clear your head. Most 'genius' breakthroughs happen when you aren't staring at the screen. Keep pushing; you're building a future that most people only dream of!"]
     },
-{
+    {
       "tag": "password_security",
       "patterns": ["How to make a strong password?", "Password tips", "Is my password safe?", "2FA", "Multi-factor authentication"],
       "responses": ["A strong password should be at least 12 characters long and include a mix of uppercase letters, lowercase letters, numbers, and symbols. Avoid using easily guessable information like your name, birthdate, or 'FUTO2026'. For maximum security, always enable Multi-Factor Authentication (MFA) or 2FA on your accounts. This adds an extra layer of protection, requiring a code from your phone or an app even if someone steals your password!"]
@@ -720,7 +395,7 @@
     {
       "tag": "social_engineering",
       "patterns": ["What is social engineering?", "Human hacking", "Psychological manipulation", "Baiting and tailgating"],
-      "responses": ["Social engineering is the art of manipulating people into giving up confidential information. Instead of hacking a computer, the attacker 'hacks' the human. Examples include someone calling you pretending to be 'bank customer care' or a stranger following you through a secure door at the SICT building. Always verify the identity of anyone asking for sensitive data, regardless of how friendly or official they seem."]
+      "responses": ["Social engineering is the art of manipulating people into giving up confidential information. Instead of hacking a computer, the attacker 'hacks' the human. Examples include someone calling you pretending to be 'bank customer care' or a stranger following you through a door. Always verify the identity of anyone asking for sensitive data."]
     },
     {
       "tag": "encryption_basics",
@@ -747,7 +422,7 @@
       "patterns": ["How to find bugs?", "Vulnerability assessment", "Nmap", "Metasploit", "Scanning networks"],
       "responses": ["Vulnerability scanning involves using automated tools like Nmap or Nessus to identify weaknesses in a computer system or network. It is a key part of an Ethical Hacker's toolkit. Once vulnerabilities are found, they are analyzed and patched to prevent real attackers from exploiting them. Just remember: never scan a network or system you don't own or have explicit written permission to test!"]
     },
-{
+    {
       "tag": "mobile_app_permissions",
       "patterns": ["Why does this app need my camera?", "App permissions", "Is it safe to grant access?", "Android security settings", "Microphone access"],
       "responses": ["Mobile apps often request permissions to access your camera, contacts, or location to function. However, you should be wary of 'Permission Creep'—where a simple calculator app asks for your contacts! Always review permissions in your settings and only grant access to what the app truly needs to work. For example, Mobile Legends needs your storage to download game assets, but it shouldn't need your SMS history!"]
@@ -797,7 +472,7 @@
       "patterns": ["Should I clear my cache?", "What is app data?", "Cleaning my phone storage", "Privacy in browsers"],
       "responses": ["Your app cache stores temporary files to help apps load faster, but it can also store sensitive information like login fragments or browsing history. Regularly clearing your browser cache and app data can help protect your privacy, especially if you share your device with others. It's also a great way to free up space on your HP ProBook or phone when storage gets tight!"]
     },
-{
+    {
       "tag": "social_media_privacy",
       "patterns": ["How to make my profile private?", "Who can see my posts?", "Privacy settings for Instagram", "Facebook privacy audit", "TikTok security"],
       "responses": ["To protect your privacy in 2026, you should audit your account settings monthly. Set your profiles to 'Private' so only approved followers can see your content, and use audience segmentation tools to restrict sensitive updates to close friends. Always check your 'Protection Score' if available to identify and shore up any weak spots in your digital identity!"]
@@ -847,7 +522,7 @@
       "patterns": ["I got a weird DM from a friend", "Should I click this link in messenger?", "My friend was hacked", "Reporting suspicious accounts"],
       "responses": ["If you receive an unexpected request for money or a weird link from a friend's account, they have likely been hacked. Do not click the link or engage; instead, contact that friend through a different channel (like a phone call or SMS) to let them know. Immediately report the suspicious account to the platform to help stop the scam from spreading!"]
     },
-{
+    {
       "tag": "safe_online_shopping",
       "patterns": ["How to shop safely online?", "Is this website a scam?", "Safe shopping in Nigeria", "Jumia and Konga safety", "Checking seller reviews"],
       "responses": ["Before buying, always check the platform's reputation and how long it has been operating. Look for 'https' in the URL and a padlock icon to ensure your connection is encrypted. Read both positive and negative reviews carefully, paying attention to patterns in complaints or how the seller responds to feedback. For expensive items, it is best to inspect the product before accepting delivery whenever possible."]
@@ -897,7 +572,7 @@
       "patterns": ["Why are items always sold out?", "Scalping bots", "Inventory hoarding"],
       "responses": ["In 2026, automated bots are a major threat to online stores, often purchasing high-demand products instantly to resell them at higher prices. These bots can also be used to test stolen login credentials or fraudulent purchases. Protecting e-commerce sites requires layered security and continuous monitoring to separate legitimate customers from these malicious automated attacks."]
     },
-{
+    {
       "tag": "cloud_security_basics",
       "patterns": ["Is the cloud safe?", "What is cloud security?", "Shared responsibility model", "How to secure my Render app?", "Protecting cloud workloads"],
       "responses": ["In 2026, cloud security follows a 'Shared Responsibility Model' where the provider (like Render or AWS) secures the infrastructure, but you are responsible for securing your own code, data, and access permissions. To keep your apps safe, implement 'Zero Trust' principles—assuming no user or device is trustworthy by default— and always use strong Identity and Access Management (IAM) to control who can touch your resources!"]
@@ -947,7 +622,7 @@
       "patterns": ["What is Zero Trust?", "Always verify principle", "Assume breach mindset", "Zero trust for students"],
       "responses": ["Zero Trust is a security framework that assumes the network is always hostile and requires every user and device to be continuously verified before gaining access. It moves away from the old 'castle and moat' style of security toward a model of 'Never Trust, Always Verify'. For your projects, this means enforcing strict authentication and least-privilege access for every single resource."]
     },
-{
+    {
       "tag": "ai_ethics_basics",
       "patterns": ["Is AI ethical?", "What are AI ethics?", "Bias in AI", "Responsible AI use", "Can AI be dangerous?"],
       "responses": ["AI ethics is a set of values and principles aimed at ensuring AI technologies are developed and used responsibly. It addresses critical issues like algorithmic bias—where AI can unintentionally discriminate—and ensures that systems are transparent and accountable to the humans they serve. In 2026, 'Ethics by Design' is the standard for building AI that respects user privacy and promotes fairness!"]
@@ -997,7 +672,7 @@
       "patterns": ["Is AI bad for the environment?", "Energy use of AI", "Sustainable tech", "Cooling data centers"],
       "responses": ["AI requires massive amounts of energy to train and run, which has a significant environmental footprint. In 2026, 'Green Tech' initiatives focus on making data centers more energy-efficient and using AI itself to optimize power grids and reduce waste. Building sustainable software is now a key part of being a responsible developer in the global tech community!"]
     },
-{
+    {
       "tag": "about_developer",
       "patterns": ["Who built you?", "Who is the developer?", "Who made this bot?", "Lazarus Michael Chibuike", "20231374542"],
       "responses": ["I was developed by Lazarus Michael Chibuike, a brilliant 300-level Cybersecurity student at the Federal University of Technology, Owerri (FUTO)! His registration number is 20231374542. He built my brain using Python and Flask, and my face using HTML, CSS, and JavaScript."]
@@ -1046,4 +721,6 @@
       "tag": "appreciation",
       "patterns": ["You are smart", "Good bot", "Thank you bot", "Amazing project"],
       "responses": ["Thank you! I try my best. All the credit goes to Lazarus for training me so well. If you like what I do, make sure to tell him!"]
-    },
+    }
+  ]
+}
