@@ -575,11 +575,6 @@
       "responses": ["FUTO is located in Ihiagwa, Owerri West Local Government Area of Imo State, Nigeria. It's surrounded by the Otamiri River!"]
     },
     {
-      "tag": "futo_anthem",
-      "patterns": ["Sing FUTO anthem", "What is the school anthem?", "FUTO song"],
-      "responses": ["'FUTO! FUTO!! Our Great Citadel of Excellence...' It's a song of pride for every student. You should learn it for convocation!"]
-    },
-    {
       "tag": "transportation",
       "patterns": ["How to get to school?", "Bus to FUTO", "Green bus", "School shuttle"],
       "responses": ["You can take the popular 'Green Bus' from Control or Relief market. Inside campus, we have the school shuttles that move between the various hostels and lecture halls."]
@@ -619,4 +614,453 @@
       "patterns": ["Where is the stadium?", "Football in FUTO", "Sports center", "Gym campus"],
       "responses": ["The Sports Center is near the hostels. We have football pitches, basketball courts, and track facilities for all students to use!"]
     },
-
+{
+      "tag": "cyb_311",
+      "patterns": ["What is CYB 311?", "Tell me about CYB 311", "Cybersecurity practicals", "Python in CYB"],
+      "responses": ["CYB 311 is focused on Cybersecurity Programming. You'll be using Python to build security tools and automate tasks!"]
+    },
+    {
+      "tag": "cyb_309",
+      "patterns": ["What is CYB 309?", "CYB 309 topics", "C++ in CYB", "Object oriented programming"],
+      "responses": ["CYB 309 covers Object-Oriented Programming (OOP) using C++. It is essential for understanding how secure software is built!"]
+    },
+    {
+      "tag": "cyb_hod",
+      "patterns": ["Who is the HOD of Cybersecurity?", "Cybersecurity department head", "HOD office"],
+      "responses": ["The Cybersecurity Department is under the School of Information and Communication Technology (SICT). You can find the HOD's office in the SICT building."]
+    },
+    {
+      "tag": "networking",
+      "patterns": ["Study networking", "Computer networks", "CISCO", "CCNA"],
+      "responses": ["Networking is the backbone of Cybersecurity! Focus on the OSI model, IP addressing, and packet sniffing to get ahead."]
+    },
+    {
+      "tag": "lab_practicals",
+      "patterns": ["Where are the CYB labs?", "Computer lab location", "Cybersecurity practical venue"],
+      "responses": ["Most CYB practicals take place in the SICT computer labs. Make sure you have your ID card and lab manual ready!"]
+    },
+    {
+      "tag": "fullstack_dev",
+      "patterns": ["What is full-stack development?", "Frontend and backend", "Web security"],
+      "responses": ["Full-stack development involves building both the user interface (Frontend) and the server/database (Backend). It's great for understanding web vulnerabilities!"]
+    },
+    {
+      "tag": "cyb_association",
+      "patterns": ["Cybersecurity student association", "NACOSS", "CYB students group"],
+      "responses": ["You belong to the National Association of Computing Students (NACOSS). It's a great place to network with other tech students in FUTO."]
+    },
+    {
+      "tag": "linux_basics",
+      "patterns": ["Why use Linux?", "Kali Linux", "Linux for cybersecurity", "Ubuntu"],
+      "responses": ["Linux is the preferred OS for security professionals because of its powerful terminal and open-source tools like Kali or Parrot OS."]
+    },
+    {
+      "tag": "ethical_hacking",
+      "patterns": ["How to start ethical hacking?", "Penetration testing", "White hat hacking"],
+      "responses": ["Start by learning the basics of networking, Linux, and at least one programming language like Python. Practice on platforms like TryHackMe!"]
+    },
+    {
+      "tag": "cyber_ethics",
+      "patterns": ["What are cyber ethics?", "Legal hacking", "Cybercrime laws Nigeria"],
+      "responses": ["Cyber ethics involve using your skills for good. Always stay within the law and never access systems without explicit permission!"]
+    },
+{
+      "tag": "version_control",
+      "patterns": ["What is Git?", "How to use GitHub", "Why use version control?", "Commit and Push", "Repository basics"],
+      "responses": ["Git is a version control system that tracks changes in your code, while GitHub is a cloud-based platform that hosts those Git repositories. As a Cybersecurity student, using Git is non-negotiable! It allows you to collaborate with others, revert to previous working versions if you break your code, and maintain a professional portfolio. You should master commands like 'git add', 'git commit', and 'git push' to manage your projects effectively."]
+    },
+    {
+      "tag": "api_explanation",
+      "patterns": ["What is an API?", "How do servers talk?", "Application Programming Interface", "REST API", "JSON and APIs"],
+      "responses": ["An API (Application Programming Interface) is a set of rules that allows one software application to talk to another. Think of it as a waiter in a restaurant: you (the client) give an order, the waiter takes it to the kitchen (the server), and brings back your food (the data). Your current chatbot uses this exact logic! Your HTML frontend sends a request to your Flask backend API, which processes the message and sends back a response in JSON format."]
+    },
+    {
+      "tag": "database_basics",
+      "patterns": ["What is a database?", "SQL vs NoSQL", "Storing data", "Database security", "MySQL", "MongoDB"],
+      "responses": ["A database is an organized collection of structured information, or data, typically stored electronically in a computer system. There are two main types: SQL (Relational) like MySQL or PostgreSQL, which uses tables, and NoSQL (Non-relational) like MongoDB, which uses document-style structures. In Cybersecurity, database security is vital because most data breaches involve attackers trying to gain unauthorized access to these sensitive storage systems through techniques like SQL Injection."]
+    },
+    {
+      "tag": "cloud_computing",
+      "patterns": ["What is Cloud Computing?", "Render and AWS", "Why use the cloud?", "Deployment", "SaaS PaaS IaaS"],
+      "responses": ["Cloud computing is the on-demand delivery of IT resources over the internet with pay-as-you-go pricing. Instead of buying and maintaining physical servers, you 'rent' power from providers like Render (which you are using now!), AWS, or Google Cloud. For a developer, the cloud is amazing because it makes your apps accessible to anyone in the world, 24/7, without you needing to keep your own laptop running all night."]
+    },
+    {
+      "tag": "frontend_tech",
+      "patterns": ["What is Frontend?", "HTML CSS JS", "Web design basics", "Making a website look good"],
+      "responses": ["Frontend development is everything a user sees and interacts with on a website. It is built using a 'Holy Trinity' of technologies: HTML provides the structure (the bones), CSS provides the styling (the skin and clothes), and JavaScript provides the functionality (the muscles). Even as a security expert, you must understand frontend tech to defend against attacks like Cross-Site Scripting (XSS) that target the user's browser."]
+    },
+    {
+      "tag": "backend_tech",
+      "patterns": ["What is Backend?", "Flask and Django", "Server side programming", "Python backend"],
+      "responses": ["The Backend is the 'brain' of the operation that lives on the server. It handles the logic, database interactions, and authentication that users never see directly. You are currently using Flask, which is a 'micro-framework' for Python. It is popular because it is lightweight and easy to set up, making it perfect for building APIs and small-to-medium web applications like your FUTO Info Bot!"]
+    },
+    {
+      "tag": "coding_best_practices",
+      "patterns": ["How to write better code?", "Clean code", "Debugging tips", "Documentation", "Comments in code"],
+      "responses": ["Writing code that works is only half the job; writing 'Clean Code' that others can read is the other half! Always use descriptive variable names (like 'user_message' instead of just 'm'), keep your functions small and focused on one task, and write comments to explain 'why' you did something, not just 'what' the code does. Remember: You will likely have to read your own code six months from now, so be kind to your future self!"]
+    },
+    {
+      "tag": "tech_internships",
+      "patterns": ["How to get an internship?", "IT student jobs", "SIWES advice", "Building a resume"],
+      "responses": ["For FUTO students, the SIWES period is the best time to get real-world experience. To land a good internship, don't just rely on your grades. Build personal projects (like this chatbot!), contribute to open-source code on GitHub, and practice your technical interview skills. Networking on LinkedIn with professionals in the Nigerian tech space can also open doors that a cold application never will."]
+    },
+    {
+      "tag": "open_source",
+      "patterns": ["What is open source?", "Contributing to code", "Linux and Open Source", "FOSS"],
+      "responses": ["Open Source software is code that is designed to be publicly accessible—anyone can see, modify, and distribute the code as they see fit. This collaborative model is responsible for some of the world's most important tech, including the Linux kernel and the Python language itself. Contributing to open-source projects is one of the fastest ways to improve your coding skills and build a global reputation as a developer."]
+    },
+    {
+      "tag": "staying_motivated",
+      "patterns": ["Coding is hard", "I feel stuck", "Developer burnout", "Motivation for students"],
+      "responses": ["Coding is a marathon, not a sprint. It is completely normal to feel frustrated when your code doesn't work or when you see an 'Internal Server Error' for the tenth time! When you get stuck, take a break, go for a walk around Ihiagwa, or play a game of Mobile Legends to clear your head. Most 'genius' breakthroughs happen when you aren't staring at the screen. Keep pushing; you're building a future that most people only dream of!"]
+    },
+{
+      "tag": "password_security",
+      "patterns": ["How to make a strong password?", "Password tips", "Is my password safe?", "2FA", "Multi-factor authentication"],
+      "responses": ["A strong password should be at least 12 characters long and include a mix of uppercase letters, lowercase letters, numbers, and symbols. Avoid using easily guessable information like your name, birthdate, or 'FUTO2026'. For maximum security, always enable Multi-Factor Authentication (MFA) or 2FA on your accounts. This adds an extra layer of protection, requiring a code from your phone or an app even if someone steals your password!"]
+    },
+    {
+      "tag": "phishing_awareness",
+      "patterns": ["What is phishing?", "Fake emails", "Suspicious links", "How to spot a scam?", "Email security"],
+      "responses": ["Phishing is a cyber attack where attackers send fraudulent messages to trick you into revealing sensitive information like login credentials or BVN details. To spot a scam, look for urgent language (e.g., 'Your account will be deleted in 1 hour!'), poor grammar, and sender addresses that don't match the official website. Never click on suspicious links or download attachments from people you don't know, especially in 'NELFUND' or 'FCMB' related emails!"]
+    },
+    {
+      "tag": "public_wifi_risks",
+      "patterns": ["Is public wifi safe?", "Using free wifi", "Security on school wifi", "VPN benefits", "Man-in-the-middle attack"],
+      "responses": ["Public Wi-Fi is often unencrypted, meaning hackers on the same network can intercept your data in what is known as a Man-in-the-Middle (MitM) attack. If you must use a public hotspot at school or a cafe, avoid logging into bank accounts or sensitive portals. Using a Virtual Private Network (VPN) is highly recommended as it creates an encrypted tunnel for your data, keeping your browsing private from prying eyes."]
+    },
+    {
+      "tag": "malware_types",
+      "patterns": ["What is malware?", "Types of viruses", "Ransomware", "Spyware", "Trojan horse"],
+      "responses": ["Malware, short for 'malicious software,' is any code designed to damage or gain unauthorized access to a computer system. Common types include Viruses (which self-replicate), Ransomware (which locks your files until you pay), Spyware (which watches your activity), and Trojans (which pretend to be useful programs). Keeping your operating system updated and using a reputable antivirus is your first line of defense!"]
+    },
+    {
+      "tag": "social_engineering",
+      "patterns": ["What is social engineering?", "Human hacking", "Psychological manipulation", "Baiting and tailgating"],
+      "responses": ["Social engineering is the art of manipulating people into giving up confidential information. Instead of hacking a computer, the attacker 'hacks' the human. Examples include someone calling you pretending to be 'bank customer care' or a stranger following you through a secure door at the SICT building. Always verify the identity of anyone asking for sensitive data, regardless of how friendly or official they seem."]
+    },
+    {
+      "tag": "encryption_basics",
+      "patterns": ["What is encryption?", "Symmetric vs Asymmetric", "How to hide data", "Cryptography", "AES and RSA"],
+      "responses": ["Encryption is the process of converting readable data (plaintext) into an unreadable format (ciphertext) using a secret key. Only someone with the correct key can decrypt and read the information. In your CYB 311 or 309 classes, you'll learn about Symmetric encryption (one key for both) and Asymmetric encryption (public and private keys). It is the fundamental technology that keeps your WhatsApp messages and online banking transactions secure!"]
+    },
+    {
+      "tag": "iot_security",
+      "patterns": ["What is IoT?", "Internet of Things security", "Smart devices safety", "Hacking smart cameras"],
+      "responses": ["The Internet of Things (IoT) refers to physical devices like smart cameras, watches, and home appliances that connect to the internet. While convenient, many of these devices have weak security settings and default passwords (like 'admin123'). Attackers can use compromised IoT devices to launch massive attacks or spy on users. Always change default passwords and keep your smart device firmware updated!"]
+    },
+    {
+      "tag": "data_privacy_laws",
+      "patterns": ["NDPR", "Data privacy in Nigeria", "Is my data private?", "Privacy rights"],
+      "responses": ["In Nigeria, the Nigeria Data Protection Regulation (NDPR) was established to protect the privacy of citizens' data. It sets rules on how organizations can collect and use your personal information. As a Cybersecurity student, understanding these regulations is crucial because you'll need to ensure the systems you build or defend are compliant with the law and respect user privacy!"]
+    },
+    {
+      "tag": "ethical_hacker_mindset",
+      "patterns": ["Think like a hacker", "Cybersecurity mindset", "Red team vs Blue team", "Defense in depth"],
+      "responses": ["To be a great Cybersecurity professional, you must learn to think like a hacker while maintaining the ethics of a defender. This means constantly asking 'How could someone break this?' and 'Where is the weakest link?'. Using a 'Defense in Depth' strategy—meaning multiple layers of security—ensures that even if one layer fails, your data remains protected."]
+    },
+    {
+      "tag": "vulnerability_scanning",
+      "patterns": ["How to find bugs?", "Vulnerability assessment", "Nmap", "Metasploit", "Scanning networks"],
+      "responses": ["Vulnerability scanning involves using automated tools like Nmap or Nessus to identify weaknesses in a computer system or network. It is a key part of an Ethical Hacker's toolkit. Once vulnerabilities are found, they are analyzed and patched to prevent real attackers from exploiting them. Just remember: never scan a network or system you don't own or have explicit written permission to test!"]
+    },
+{
+      "tag": "mobile_app_permissions",
+      "patterns": ["Why does this app need my camera?", "App permissions", "Is it safe to grant access?", "Android security settings", "Microphone access"],
+      "responses": ["Mobile apps often request permissions to access your camera, contacts, or location to function. However, you should be wary of 'Permission Creep'—where a simple calculator app asks for your contacts! Always review permissions in your settings and only grant access to what the app truly needs to work. For example, Mobile Legends needs your storage to download game assets, but it shouldn't need your SMS history!"]
+    },
+    {
+      "tag": "sideloading_risks",
+      "patterns": ["Installing APKs", "Is it safe to download apps from the web?", "What is sideloading?", "Modded apps", "Free premium apps"],
+      "responses": ["Sideloading is the process of installing apps (APKs) from sources other than the official Google Play Store or Apple App Store. While it's tempting to download 'Modded' versions of apps or free premium games, these files often contain hidden malware or spyware. Stick to official stores whenever possible, as they scan apps for malicious code before allowing you to download them!"]
+    },
+    {
+      "tag": "mobile_banking_safety",
+      "patterns": ["Is mobile banking safe?", "Using FCMB app", "Banking on my phone", "USSD security", "Protecting my bank account"],
+      "responses": ["Mobile banking is generally safe if you follow best practices. Never share your PIN or OTP (One-Time Password) with anyone, even if they claim to be from FCMB or your bank. Always use the official bank app rather than just USSD codes for sensitive transactions, as the apps use stronger encryption. Ensure your phone has a strong screen lock (Biometrics or PIN) so that even if it's stolen, your money remains secure."]
+    },
+    {
+      "tag": "lost_phone_protocol",
+      "patterns": ["What if my phone is stolen?", "Find my device", "I lost my phone", "Remote wipe", "IMEI number"],
+      "responses": ["If your phone is lost or stolen, use 'Find My Device' (Android) or 'Find My' (iOS) from another computer to locate it or remotely wipe your data. You should also contact your service provider (like MTN or Airtel) to block your SIM card and prevent anyone from using it to access your bank accounts via USSD. Keep a record of your IMEI number—you can find it by dialing *#06#—as the police will need it to track the device."]
+    },
+    {
+      "tag": "public_charging_juice_jacking",
+      "patterns": ["Is it safe to use public USB chargers?", "Juice jacking", "Charging my phone at a cafe", "USB data blocker"],
+      "responses": ["'Juice Jacking' is a cyber attack where hackers use public USB charging stations to steal data or install malware on your phone. The USB cable that charges your phone also transfers data! To stay safe, use your own power adapter and plug it into a standard wall outlet instead of a USB port. If you must use a public USB port, consider using a 'USB Data Blocker' (also called a USB Condom) which prevents data transfer while allowing power to flow."]
+    },
+    {
+      "tag": "os_updates_mobile",
+      "patterns": ["Should I update my phone?", "System updates", "Android security patch", "Why is my phone slow after update?"],
+      "responses": ["Yes, you should always install system updates! These updates often include critical 'Security Patches' that fix vulnerabilities hackers use to take control of devices. While updates can sometimes feel like they slow down older phones, the security benefits far outweigh the performance hit. Hackers love targeting people who run outdated software, so don't be an easy target!"]
+    },
+    {
+      "tag": "sim_swap_fraud",
+      "patterns": ["What is a SIM swap?", "My SIM stopped working", "SIM card security", "Network provider scams"],
+      "responses": ["SIM swapping occurs when a criminal convinces your network provider to switch your phone number to a SIM card they own. Once they have your number, they can bypass your 2FA and reset your bank passwords. If your SIM suddenly loses service and says 'No Signal' in a place where you usually have bars, contact your provider immediately! You can protect yourself by adding a 'SIM PIN' in your phone's security settings."]
+    },
+    {
+      "tag": "biometric_security",
+      "patterns": ["Is Face ID safe?", "Fingerprint vs PIN", "Are biometrics better?", "Is my fingerprint stored by the app?"],
+      "responses": ["Biometric security (Fingerprints and Face ID) is very convenient and generally more secure than a simple 4-digit PIN. Your actual fingerprint or face scan is not stored by the app or in the cloud; it stays in a secure 'Enclave' on your phone's hardware. While no system is 100% unhackable, using biometrics combined with a strong backup passcode is the gold standard for mobile security."]
+    },
+    {
+      "tag": "rooting_jailbreaking",
+      "patterns": ["Should I root my Android?", "What is jailbreaking?", "Custom ROMs", "Admin access on phone"],
+      "responses": ["Rooting (Android) or Jailbreaking (iOS) gives you full administrative control over your phone's operating system. While this lets you customize everything, it also removes the built-in security 'sandboxes' that protect your apps from each other. A rooted phone is much more vulnerable to malware because any malicious app you install can also gain full admin rights. Unless you are an expert, it's safer to leave your phone unrooted!"]
+    },
+    {
+      "tag": "app_cache_privacy",
+      "patterns": ["Should I clear my cache?", "What is app data?", "Cleaning my phone storage", "Privacy in browsers"],
+      "responses": ["Your app cache stores temporary files to help apps load faster, but it can also store sensitive information like login fragments or browsing history. Regularly clearing your browser cache and app data can help protect your privacy, especially if you share your device with others. It's also a great way to free up space on your HP ProBook or phone when storage gets tight!"]
+    },
+{
+      "tag": "social_media_privacy",
+      "patterns": ["How to make my profile private?", "Who can see my posts?", "Privacy settings for Instagram", "Facebook privacy audit", "TikTok security"],
+      "responses": ["To protect your privacy in 2026, you should audit your account settings monthly. Set your profiles to 'Private' so only approved followers can see your content, and use audience segmentation tools to restrict sensitive updates to close friends. Always check your 'Protection Score' if available to identify and shore up any weak spots in your digital identity!"]
+    },
+    {
+      "tag": "deepfake_awareness",
+      "patterns": ["What is a deepfake?", "AI video clones", "Fake celebrity videos", "How to spot a deepfake?", "Digital watermarking"],
+      "responses": ["Deepfakes are AI-generated videos or audio that clone a real person's face or voice to spread misinformation or commit fraud. To spot them, look for unnatural lip-syncing, odd eye movements, or delayed responses during calls. In 2026, many official videos now use digital watermarking to provide a 'provenance trail' so you can verify they are genuine!"]
+    },
+    {
+      "tag": "voice_cloning_scams",
+      "patterns": ["AI voice scams", "Grandparent scam 2026", "Fake phone calls from family", "Hi Grandma scam", "Voice impersonation"],
+      "responses": ["Scammers now use short audio clips from social media to clone the voices of your loved ones using AI. They may call pretending to be in an accident or arrested, urgently asking for money via gift cards or apps. If you receive a suspicious 'emergency' call, hang up and call that family member directly on their known number to verify the story!"]
+    },
+    {
+      "tag": "oversharing_risks",
+      "patterns": ["What should I not post online?", "Risks of oversharing", "Posting vacation photos", "Is it safe to share my location?", "Digital footprint audit"],
+      "responses": ["Avoid sharing sensitive details like your home address, full birthdate, or real-time travel plans, as criminals use these to craft targeted social engineering attacks. Even a simple 'out of office' post can signal that your home is unguarded. Remember the 'Never click and tell' principle: think before you share, because once it's online, it's nearly impossible to fully delete!"]
+    },
+    {
+      "tag": "mfa_social_media",
+      "patterns": ["Should I use MFA on social media?", "Authenticator apps vs SMS", "Hardware security keys", "Is 2FA enough?", "Securing my login"],
+      "responses": ["Yes, enabling Multi-Factor Authentication (MFA) can block up to 99.9% of automated login attempts. While SMS codes are convenient, using an Authenticator App or a physical Hardware Security Key is much more secure in 2026 because they are harder for hackers to intercept through 'session hijacking' or 'SIM swapping'!"]
+    },
+    {
+      "tag": "social_engineering_scams",
+      "patterns": ["What are social media scams?", "Fake Instagram ads", "Romance cons", "Get rich quick schemes", "Quizzes that steal data"],
+      "responses": ["Scammers use fake ads, 'fun' quizzes, and romantic impersonation to steal your personal information or payment details. Be wary of deals that seem too good to be true, like 90% discounts on luxury brands, and never enter your data into a site linked from a DM or a suspicious ad. Always go directly to the official website by typing the URL yourself!"]
+    },
+    {
+      "tag": "credential_stuffing",
+      "patterns": ["What is credential stuffing?", "Why use unique passwords?", "Reusing passwords risks", "Password manager benefits"],
+      "responses": ["Credential stuffing is an automated attack where hackers use leaked passwords from one site to break into your other accounts. Because people often reuse passwords, one breach can lead to a 'domino effect' across all your social media. Using a reputable password manager to create and store unique, 16-character passwords for every account is the best defense!"]
+    },
+    {
+      "tag": "tagging_and_mentions",
+      "patterns": ["Who can tag me?", "Reviewing tags on Facebook", "Unlinking my name from posts", "Photo tagging privacy"],
+      "responses": ["Hackers often steal accounts and tag all that person's friends in scam posts to gain trust. You should adjust your settings to 'Manually Approve Tags' so you have full control over what appears on your profile. This helps you stay aware of where you are being mentioned and prevents your name from being used to spread malicious links!"]
+    },
+    {
+      "tag": "digital_footprint_cleanup",
+      "patterns": ["How to delete my data from the web?", "Scrubbing my personal info", "DeleteMe service", "Managing my online presence"],
+      "responses": ["Regularly evaluate your digital footprint by scrubbing LinkedIn and other profiles of private info like home addresses or phone numbers. In 2026, enterprise-grade data removal services like 'DeleteMe' can help you find and remove your personal data from public search results and data broker sites, significantly reducing your risk of being targeted by threat actors!"]
+    },
+    {
+      "tag": "suspicious_dm_protocol",
+      "patterns": ["I got a weird DM from a friend", "Should I click this link in messenger?", "My friend was hacked", "Reporting suspicious accounts"],
+      "responses": ["If you receive an unexpected request for money or a weird link from a friend's account, they have likely been hacked. Do not click the link or engage; instead, contact that friend through a different channel (like a phone call or SMS) to let them know. Immediately report the suspicious account to the platform to help stop the scam from spreading!"]
+    },
+{
+      "tag": "safe_online_shopping",
+      "patterns": ["How to shop safely online?", "Is this website a scam?", "Safe shopping in Nigeria", "Jumia and Konga safety", "Checking seller reviews"],
+      "responses": ["Before buying, always check the platform's reputation and how long it has been operating. Look for 'https' in the URL and a padlock icon to ensure your connection is encrypted. Read both positive and negative reviews carefully, paying attention to patterns in complaints or how the seller responds to feedback. For expensive items, it is best to inspect the product before accepting delivery whenever possible."]
+    },
+    {
+      "tag": "secure_payment_methods",
+      "patterns": ["What is the safest way to pay?", "Should I use my card online?", "Paystack and Flutterwave", "Bank transfer vs Card", "Is USDT safe for payment?"],
+      "responses": ["Use recognized payment gateways like Paystack, Flutterwave, or Interswitch, which provide multiple secure options including cards and bank transfers. Avoid sellers who pressure you to pay 'off-platform' or via untraceable methods for expensive items. In 2026, many Nigerian users also use USDT for flexible, real-time international payments, but only use reputable platforms like Remitano or Binance to buy it. Never save your card details on public or shared devices!"]
+    },
+    {
+      "tag": "banking_fraud_prevention",
+      "patterns": ["How to stop bank scams?", "Protect my BVN", "SIM swap fraud Nigeria", "Fake bank alerts", "USSD security tips"],
+      "responses": ["Protect your bank account by enabling multi-factor authentication (MFA) on all banking apps. Never share your BVN, card PIN, or CVV with anyone, and be wary of 'urgent' messages from unknown numbers pretending to be your bank. Activate instant transaction alerts for every debit and credit so you can spot unauthorized activity immediately. If you lose your phone, contact your network provider (like MTN) right away to block your SIM and prevent USSD-based theft."]
+    },
+    {
+      "tag": "spotting_fake_websites",
+      "patterns": ["Is this a fake site?", "Identifying phishing pages", "Wrong URL check", "Cloned shopping sites"],
+      "responses": ["Always inspect URLs closely; just one wrong letter can send you to a fake site designed to steal your data. Scammers often clone popular Nigerian shopping sites to capture login credentials. Be suspicious of 'too-good-to-be-true' prices on branded items, as these often indicate fakes or scams. If a site lacks clear contact information, a physical address, or a transparent privacy policy, it is likely a red flag."]
+    },
+    {
+      "tag": "refunds_and_disputes",
+      "patterns": ["How to get a refund?", "I got scammed online", "Reporting a bad seller", "Dispute resolution FUTO"],
+      "responses": ["If you have an issue, contact the seller first to see if it's a simple misunderstanding. If that fails, use the platform's official dispute resolution channel rather than dealing with the seller privately. Document everything by keeping screenshots of the product description, your payment confirmation, and all emails. You can also report significant fraud to Nigerian authorities like the NCC or EFCC."]
+    },
+    {
+      "tag": "public_device_banking",
+      "patterns": ["Can I bank at a cybercafe?", "Using school computers for payment", "Privacy on shared laptops"],
+      "responses": ["Avoid accessing your bank account or entering card details on public Wi-Fi or shared computers like those in a cybercafe or school lab. These networks are often unsecured and can be exploited by hackers to intercept your data. If you must use a shared device, always log out completely when finished and never allow the browser to 'remember' your passwords or payment info."]
+    },
+    {
+      "tag": "protecting_savings",
+      "patterns": ["How to keep my savings safe?", "Changing my bank PIN", "Security for student accounts"],
+      "responses": ["Your PIN is your first line of defense; change it periodically and avoid predictable numbers like 1234 or your birth year. Use advanced security features like biometric login (fingerprint or face recognition) if your banking app supports it, as these are much harder for scammers to bypass. Regularly monitor your account activity and change all linked passwords immediately if you suspect any incident."]
+    },
+    {
+      "tag": "fake_investment_scams",
+      "patterns": ["Is this investment real?", "Crypto doubled in 24 hours", "Ponzi scheme warning"],
+      "responses": ["Be extremely skeptical of 'too-good-to-be-true' investment opportunities, especially those promising high returns in a very short time. Nigeria has seen many fake crypto platforms and wallet-hacking malware recently. Never share your crypto wallet keys or seed phrases with anyone, as no legitimate platform will ever ask for them!"]
+    },
+    {
+      "tag": "card_security_features",
+      "patterns": ["What is CVV?", "Address verification", "Enforcing card security"],
+      "responses": ["The CVV (the 3 digits on the back of your card) ensures that the person making the purchase has physical access to the card. Many modern e-commerce sites in 2026 also use Address Verification Services (AVS) to match your billing address with the bank's records. If these details don't match, the transaction is often flagged or declined to prevent stolen card use."]
+    },
+    {
+      "tag": "automated_bot_threats",
+      "patterns": ["Why are items always sold out?", "Scalping bots", "Inventory hoarding"],
+      "responses": ["In 2026, automated bots are a major threat to online stores, often purchasing high-demand products instantly to resell them at higher prices. These bots can also be used to test stolen login credentials or fraudulent purchases. Protecting e-commerce sites requires layered security and continuous monitoring to separate legitimate customers from these malicious automated attacks."]
+    },
+{
+      "tag": "cloud_security_basics",
+      "patterns": ["Is the cloud safe?", "What is cloud security?", "Shared responsibility model", "How to secure my Render app?", "Protecting cloud workloads"],
+      "responses": ["In 2026, cloud security follows a 'Shared Responsibility Model' where the provider (like Render or AWS) secures the infrastructure, but you are responsible for securing your own code, data, and access permissions. To keep your apps safe, implement 'Zero Trust' principles—assuming no user or device is trustworthy by default— and always use strong Identity and Access Management (IAM) to control who can touch your resources!"]
+    },
+    {
+      "tag": "importance_of_backups",
+      "patterns": ["Why should I backup my data?", "Losing my project files", "Hardware failure protection", "Benefits of data backup for students", "Recovering deleted code"],
+      "responses": ["Data backup is your insurance policy against hardware failure, accidental deletion, and malware attacks that can devastate your academic progress. By keeping duplicate copies of your assignments and research in separate locations, you ensure that a single laptop crash or a corrupted file doesn't result in losing weeks of hard work. For a student, backups provide peace of mind and ensure you never have to 'gamble your grades' on a single device!"]
+    },
+    {
+      "tag": "backup_strategies",
+      "patterns": ["How often should I backup?", "3-2-1 backup rule", "Automated vs manual backup", "Incremental backups", "Best way to save my code"],
+      "responses": ["A professional strategy involves the 3-2-1 rule: keep 3 copies of your data, on 2 different media types (like an external drive and the cloud), with 1 copy stored off-site. You should use 'Incremental Backups' to only save the changes made since your last save, which is much faster than a full backup. Automating this process at scheduled intervals is the best way to ensure your latest work is always protected without you having to remember to click 'save'!"]
+    },
+    {
+      "tag": "cloud_misconfigurations",
+      "patterns": ["What is a cloud misconfiguration?", "Leaking sensitive data", "Open storage buckets", "Common cloud mistakes 2026", "Insecure settings"],
+      "responses": ["Misconfigurations are the leading cause of cloud data breaches, often occurring when developers leave storage 'buckets' open to the public or fail to set proper access permissions. In 2026, over 30% of security incidents globally are traced back to these minor setup mistakes. Periodically auditing your cloud settings and using automated tools to scan for insecure permissions is the best way to prevent your private project data from leaking to the web!"]
+    },
+    {
+      "tag": "secure_coding_cloud",
+      "patterns": ["How to write secure code for the cloud?", "API security best practices", "Hardcoding keys risk", "Sanitizing cloud inputs", "Secure deployment 2026"],
+      "responses": ["Secure coding for the cloud means never 'hardcoding' sensitive info like API keys or passwords directly into your scripts—use secure 'vaults' instead!. You must also strictly validate and sanitize all user inputs to prevent injection attacks and ensure your APIs are protected with strong authentication and rate limiting. In 2026, 'shifting left' by integrating automated security scans early in your development pipeline is the standard for building resilient cloud applications."]
+    },
+    {
+      "tag": "ransomware_in_cloud",
+      "patterns": ["Can the cloud get ransomware?", "Extortion in cloud storage", "Protecting against cloud viruses", "Isolating infected systems"],
+      "responses": ["Ransomware has evolved to target cloud environments, where attackers encrypt your remote files and demand payment for the decryption key. To defend yourself, keep your cloud-connected devices patched, use endpoint protection, and ensure your backups are stored in at least two geographically distinct locations. Regularly testing your recovery process is the only way to know if you can truly survive a ransomware attack!"]
+    },
+    {
+      "tag": "cloud_compliance_2026",
+      "patterns": ["What is GDPR in the cloud?", "Data protection regulations", "Cloud audit logs", "Compliance for developers"],
+      "responses": ["Compliance involves adhering to data protection laws like GDPR or Nigeria's NDPR, which dictate how you must handle personal information in the cloud. Failing to comply can result in massive fines and loss of reputation. Developers should choose cloud providers that offer compliance assistance and always maintain detailed audit logs to prove that data is being handled securely."]
+    },
+    {
+      "tag": "local_vs_cloud_storage",
+      "patterns": ["Is Google Drive better than a USB?", "Cloud vs External Hard Drive", "Remote vs Local backup", "Which storage is safer?"],
+      "responses": ["Both have pros and cons: local storage (like a USB or NAS) is fast and doesn't need internet, but it can be lost, stolen, or damaged in a fire. Cloud storage (like Google Drive or OneDrive) offers remote access and professional-grade security, but it's vulnerable to account hijacking if you don't use MFA. The best approach is a hybrid model that uses both to ensure 'disaster recovery' is always possible."]
+    },
+    {
+      "tag": "api_security_cloud",
+      "patterns": ["How to secure my API?", "Protecting app interfaces", "Monitoring API traffic", "API authentication 2026"],
+      "responses": ["Since cloud services depend on APIs, protecting these interfaces is critical to prevent account hijacking or data leaks. You should always protect your APIs with encryption (HTTPS), use authentication tokens, and monitor traffic for any suspicious activity. Following industry standards like the OWASP API Security Top 10 will help you identify and fix the most common vulnerabilities."]
+    },
+    {
+      "tag": "zero_trust_architecture",
+      "patterns": ["What is Zero Trust?", "Always verify principle", "Assume breach mindset", "Zero trust for students"],
+      "responses": ["Zero Trust is a security framework that assumes the network is always hostile and requires every user and device to be continuously verified before gaining access. It moves away from the old 'castle and moat' style of security toward a model of 'Never Trust, Always Verify'. For your projects, this means enforcing strict authentication and least-privilege access for every single resource."]
+    },
+{
+      "tag": "ai_ethics_basics",
+      "patterns": ["Is AI ethical?", "What are AI ethics?", "Bias in AI", "Responsible AI use", "Can AI be dangerous?"],
+      "responses": ["AI ethics is a set of values and principles aimed at ensuring AI technologies are developed and used responsibly. It addresses critical issues like algorithmic bias—where AI can unintentionally discriminate—and ensures that systems are transparent and accountable to the humans they serve. In 2026, 'Ethics by Design' is the standard for building AI that respects user privacy and promotes fairness!"]
+    },
+    {
+      "tag": "generative_ai_explained",
+      "patterns": ["What is Generative AI?", "How do LLMs work?", "ChatGPT and Gemini", "Predicting the next word", "Transformer models"],
+      "responses": ["Generative AI refers to models that can create new content, like text, images, or code, by learning patterns from massive amounts of existing data. Large Language Models (LLMs) work by predicting the most statistically likely next word in a sentence based on the context of the words before it. While it feels like the AI is 'thinking,' it is actually performing incredibly complex pattern matching and probability calculations!"]
+    },
+    {
+      "tag": "ai_in_cybersecurity",
+      "patterns": ["How does AI help security?", "AI for threat detection", "Automated hacking", "Defensive AI 2026", "AI vs AI attacks"],
+      "responses": ["AI is a 'double-edged sword' in Cybersecurity: it can be used by defenders to detect threats at lightning speed, but also by attackers to automate phishing and find vulnerabilities. In 2026, most security systems use machine learning to identify 'anomalous' behavior—like a login from Owerri and Lagos at the same time—to stop breaches before they happen. Staying ahead means mastering both traditional security and AI-driven defense!"]
+    },
+    {
+      "tag": "hallucinations_ai",
+      "patterns": ["Why does AI lie?", "AI hallucinations", "Is AI always right?", "Fact checking AI", "Incorrect bot answers"],
+      "responses": ["AI 'hallucinations' occur when a model confidently provides information that is factually incorrect or nonsensical. This happens because the AI is focused on making the sentence sound 'human' rather than strictly checking a database for truth. Always fact-check important AI responses, especially for academic work at FUTO or technical coding projects, to ensure the information is grounded in reality!"]
+    },
+    {
+      "tag": "future_of_jobs_ai",
+      "patterns": ["Will AI take my job?", "Tech careers in 2026", "AI replacing programmers", "Future of work", "AI as a co-pilot"],
+      "responses": ["AI is not likely to replace humans entirely, but humans who use AI will likely replace those who don't. In 2026, AI is viewed as a 'Co-pilot' that handles repetitive tasks—like writing boilerplate code or checking logs—allowing developers and security experts to focus on complex problem-solving and strategy. Learning to prompt and manage AI is now a core skill for any successful tech career!"]
+    },
+    {
+      "tag": "quantum_computing_threat",
+      "patterns": ["What is quantum computing?", "Quantum vs Encryption", "Is RSA dead?", "Post-quantum cryptography", "Future of math in tech"],
+      "responses": ["Quantum computing uses the principles of quantum mechanics to solve problems that are too complex for traditional computers. In Cybersecurity, this is a major concern because a powerful quantum computer could potentially crack the encryption (like RSA) that currently secures the entire internet. In 2026, researchers are racing to implement 'Post-Quantum Cryptography'—new math-based security that even quantum computers can't break!"]
+    },
+    {
+      "tag": "ar_vr_metaverse",
+      "patterns": ["What is the Metaverse?", "Augmented Reality 2026", "VR in education", "Virtual worlds safety", "Apple Vision Pro and Meta Quest"],
+      "responses": ["Augmented Reality (AR) overlays digital info onto the real world, while Virtual Reality (VR) immerses you in a completely digital environment. By 2026, these technologies are used for everything from 'virtual campus tours' of FUTO to remote surgical training. However, they also bring new privacy risks, as these devices collect massive amounts of biometric data like eye movements and room layouts!"]
+    },
+    {
+      "tag": "edge_computing",
+      "patterns": ["What is Edge Computing?", "Cloud vs Edge", "Faster internet 2026", "Latency and IoT"],
+      "responses": ["Edge computing moves data processing away from central cloud servers (like Render) and closer to the user's device (the 'edge'). This drastically reduces 'latency'—the delay you feel when waiting for a response—and is essential for real-time tech like self-driving cars or high-speed gaming. In 2026, edge computing makes your mobile apps feel instant and more responsive than ever!"]
+    },
+    {
+      "tag": "ai_turing_test",
+      "patterns": ["What is the Turing Test?", "Can machines think?", "Alan Turing", "Passing as human"],
+      "responses": ["The Turing Test, proposed by Alan Turing in 1950, is a test of a machine's ability to exhibit intelligent behavior indistinguishable from that of a human. While modern bots can often pass this test in short conversations, true 'Artificial General Intelligence' (AGI)—an AI that can learn any task a human can—has not yet been fully achieved in 2026. Your chatbot is a great example of 'Narrow AI'—smart at one specific job!"]
+    },
+    {
+      "tag": "green_tech_ai",
+      "patterns": ["Is AI bad for the environment?", "Energy use of AI", "Sustainable tech", "Cooling data centers"],
+      "responses": ["AI requires massive amounts of energy to train and run, which has a significant environmental footprint. In 2026, 'Green Tech' initiatives focus on making data centers more energy-efficient and using AI itself to optimize power grids and reduce waste. Building sustainable software is now a key part of being a responsible developer in the global tech community!"]
+    },
+{
+      "tag": "about_developer",
+      "patterns": ["Who built you?", "Who is the developer?", "Who made this bot?", "Lazarus Michael Chibuike", "20231374542"],
+      "responses": ["I was developed by Lazarus Michael Chibuike, a brilliant 300-level Cybersecurity student at the Federal University of Technology, Owerri (FUTO)! His registration number is 20231374542. He built my brain using Python and Flask, and my face using HTML, CSS, and JavaScript."]
+    },
+    {
+      "tag": "bot_purpose",
+      "patterns": ["What is your purpose?", "Why were you created?", "What can you do?", "Help me"],
+      "responses": ["My mission is to be the ultimate Help Desk assistant for FUTO students! I can tell you about school locations, explain complex Cybersecurity concepts from CYB 309 and 311, give you tech career advice, and even help you stay safe from online scams. Just ask me a question!"]
+    },
+    {
+      "tag": "contact_dev",
+      "patterns": ["How can I contact the creator?", "Developer email", "Lazarus phone number"],
+      "responses": ["You can reach my developer, Lazarus, at michaelazarus649@gmail.com or call him at 09067501727. He's always happy to discuss Cybersecurity, coding, or even a good game of Mobile Legends!"]
+    },
+    {
+      "tag": "easter_egg_mlbb",
+      "patterns": ["Do you play Mobile Legends?", "MLBB", "Best hero for ranking", "Sun or Martis?"],
+      "responses": ["My developer is a big fan of Mobile Legends! Whether you like playing Sun, Martis, or Thamuz, just remember: map awareness is key to winning. Don't feed the enemy!"]
+    },
+    {
+      "tag": "easter_egg_anime",
+      "patterns": ["Do you like anime?", "Recommend an anime", "Blue Exorcist", "The Quintessential Quintuplets"],
+      "responses": ["I know my developer enjoys a good high school rom-com or a dark action/horror series. Have you seen Blue Exorcist or The Quintessential Quintuplets? Those are some of his favorites!"]
+    },
+    {
+      "tag": "easter_egg_fragrance",
+      "patterns": ["Smell good", "What perfume should I wear?", "Lattafa Khamrah", "Afnan 9pm"],
+      "responses": ["If you want to smell as good as a Cybersecurity pro, Lazarus recommends checking out Lattafa Khamrah or Afnan 9pm. Fragrance layering is an art!"]
+    },
+    {
+      "tag": "easter_egg_fitness",
+      "patterns": ["Are you fit?", "Workout tips", "Jogging in FUTO"],
+      "responses": ["Physical fitness is just as important as mental fitness! Lazarus enjoys jogging around campus and doing bodyweight exercises like push-ups and squats. Stay healthy!"]
+    },
+    {
+      "tag": "easter_egg_cat",
+      "patterns": ["Do you have a pet?", "Tell me about your cat", "Meow"],
+      "responses": ["Lazarus has a very affectionate cat that loves to climb on his neck while he's coding. Meow! It's the perfect coding companion."]
+    },
+    {
+      "tag": "easter_egg_fashion",
+      "patterns": ["Minimalist fashion", "What should I wear to class?"],
+      "responses": ["Lazarus prefers a clean, minimalist style. A simple, well-fitted outfit with the right footwear is all you need to look sharp at the SICT building!"]
+    },
+    {
+      "tag": "appreciation",
+      "patterns": ["You are smart", "Good bot", "Thank you bot", "Amazing project"],
+      "responses": ["Thank you! I try my best. All the credit goes to Lazarus for training me so well. If you like what I do, make sure to tell him!"]
+    },
