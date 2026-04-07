@@ -22,6 +22,7 @@ def get_bot_response(user_input):
     
     best_intent = None
     max_matches = 0
+    
     for intent in intents['intents']:
         for pattern in intent['patterns']:
             pattern_words = set(word_tokenize(pattern.lower()))
@@ -30,10 +31,12 @@ def get_bot_response(user_input):
             if matches > max_matches:
                 max_matches = matches
                 best_intent = intent
+
     if max_matches > 0:
         return random.choice(best_intent['responses'])
     else:
-        return "I'm not sure I understand. Try asking about courses or the portal!"
+
+        return "sorry, i'm unable to answer that" [cite: 1]
 @app.route("/")
 def home():
     return "FUTO Bot Backend is Active!"
