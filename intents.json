@@ -1,0 +1,23 @@
+{"intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Good morning", "Hey there"],
+      "responses": ["Hello! How can I help you today?", "Hi there! What do you need help with?"]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["What are the courses in 300 level?", "What courses are in 300 level?", "Tell me about CYB courses", "Cyber security classes"],
+      "responses": ["At the 300 level, core courses usually include Network Security, Cryptography, and Ethical Hacking. You can get a proper list of courses offered in your current semester in your school portal"]
+    },
+    {
+      "tag": "FUTO Portal",
+      "patterns": ["How can i access my futo portal?", "what is school portal?", "I'm curious about the school portal, tell me more about it"],
+      "responses": [" The school portal is an online platform where students can access their academic information, including course materials, grades, and schedules. You can access your FUTO portal by visiting the official FUTO website and logging in with your student credentials. If you have any trouble accessing it, you can contact the school's IT support for assistance."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["Goodbye! Good luck with your studies.", "Talk to you later!", "Have a great day!"]
+    }
+  ]
+}
