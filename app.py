@@ -3,7 +3,12 @@ from flask_cors import CORS
 import nltk
 from nltk.tokenize import word_tokenize
 import json
+import random
 
+nltk.download('punkt_tab') 
+
+app = Flask(__name__)
+# ... the rest of your code stays exactly the same
 nltk.download('punkt_tab') 
 
 app = Flask(__name__)
